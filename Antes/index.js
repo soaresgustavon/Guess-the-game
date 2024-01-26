@@ -1,5 +1,6 @@
 let computerNumber
 let userNumbers = []
+let attempts = 0
 
 function init(){
     computerNumber = Math.floor(Math.random() * 101)
@@ -14,12 +15,20 @@ function compareNumber(){
 if (userNumber > computerNumber){
     document.getElementById('textOutput').innerHTML = 'Your number is to high'
     document.getElementById('inputBox').value = ''
+    attempts++
+    document.getElementById('attempts').innerHTML = attempts
     }
+
 else if (userNumber < computerNumber){
     document.getElementById('textOutput').innerHTML = 'Your number is to low'
     document.getElementById('inputBox').value = ''
+    attempts++
+    document.getElementById('attempts').innerHTML = attempts
     }
+
 else{
     document.getElementById('textOutput').innerHTML = 'Congratulations!!!'
+    attempts++
+    document.getElementById('attempts').innerHTML = attempts
     }
-} 
+}
