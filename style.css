@@ -89,6 +89,7 @@
 
   #newGameButton {
     border-radius: 0;
+    color: white
   }
   
   @media (min-width: 800px) {
